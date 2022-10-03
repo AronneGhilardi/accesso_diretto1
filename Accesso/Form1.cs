@@ -67,7 +67,7 @@ namespace Accesso
             } while (i <= j && pos == -1);
 
             if (pos != -1)
-                MessageBox.Show("Campo trovato in posizione: " + pos);
+                MessageBox.Show("Campo trovato in posizione: " + pos + 1);
             else
                 throw new Exception("Errore! Campo inesistente.");
             string fine = FromString(line, 7);
@@ -97,8 +97,6 @@ namespace Accesso
 
             return 0;
         }
-
-
 
         public static string FromString(string Stringa, int pos, string sep = ";")
         {
